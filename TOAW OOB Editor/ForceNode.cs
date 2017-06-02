@@ -11,7 +11,7 @@ namespace TOAW_OOB_Editor
 {
     internal class ForceNode : TreeNode
     {
-        private XmlNode forceXmlNode;
+        public XmlNode forceXmlNode;
         public string name;
         public int proficiency;
         public int supply;

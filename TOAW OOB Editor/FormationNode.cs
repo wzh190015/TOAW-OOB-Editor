@@ -10,7 +10,7 @@ namespace TOAW_OOB_Editor
 {
     internal class FormationNode : TreeNode
     {
-        private XmlNode formationXmlNode;
+        public XmlNode formationXmlNode;
         public string name;
         public int proficiency;
         public int supply;

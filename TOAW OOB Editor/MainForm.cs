@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace TOAW_OOB_Editor
 {
@@ -28,6 +29,7 @@ namespace TOAW_OOB_Editor
             ofd.ShowDialog();
             string filename = ofd.FileName;
             Common.ReadInGamFile(filename, treeView);
+            Common.path = filename;
         }
 
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +58,7 @@ namespace TOAW_OOB_Editor
                 case "ForceNode":
                     {
                         ForceNode forcenode = (ForceNode)selectedNode;
+                        Common.currentNode = forcenode.forceXmlNode;
 
                         textBoxName.Enabled = true;
                         textBoxName.Text = "";
@@ -81,6 +84,7 @@ namespace TOAW_OOB_Editor
                 case "FormationNode":
                     {
                         FormationNode fomationnode = (FormationNode)selectedNode;
+                        Common.currentNode = fomationnode.formationXmlNode;
 
                         textBoxName.Enabled = true;
                         textBoxName.Text = "";
@@ -106,6 +110,7 @@ namespace TOAW_OOB_Editor
                 case "UnitNode":
                     {
                         UnitNode unitnode = (UnitNode)selectedNode;
+                        Common.currentNode = unitnode.unitXmlNode;
 
                         textBoxName.Enabled = true;
                         textBoxName.Text = "";
@@ -137,6 +142,46 @@ namespace TOAW_OOB_Editor
                     { }
                     break;
             }
+        }
+
+        private void textBoxY_LostFocus(object sender, EventArgs e)
+        {
+            ((XmlElement)Common.currentNode).SetAttribute("Y", textBoxY.Text);
+        }
+
+        private void textBoxX_LostFocus(object sender, EventArgs e)
+        {
+            ((XmlElement)Common.currentNode).SetAttribute("X", textBoxX.Text);
+        }
+
+        private void textBoxReadiness_LostFocus(object sender, EventArgs e)
+        {
+            ((XmlElement)Common.currentNode).SetAttribute("READINESS", textBoxReadiness.Text);
+        }
+
+        private void textBoxSupply_LostFocus(object sender, EventArgs e)
+        {
+            string supply = "SUPPLY";
+            if (string.IsNullOrEmpty(((XmlElement)Common.currentNode).GetAttribute("SUPPLY")))
+            {
+                supply = "supply";
+            }
+           ((XmlElement)Common.currentNode).SetAttribute(supply, textBoxSupply.Text);
+        }
+
+        private void textBoxProficiency_LostFocus(object sender, EventArgs e)
+        {
+            string proficiency = "PROFICIENCY";
+            if (string.IsNullOrEmpty(((XmlElement)Common.currentNode).GetAttribute("PROFICIENCY")))
+            {
+                proficiency = "proficiency";
+            }
+           ((XmlElement)Common.currentNode).SetAttribute(proficiency, textBoxProficiency.Text);
+        }
+
+        private void textBoxName_LostFocus(object sender, EventArgs e)
+        {
+            ((XmlElement)Common.currentNode).SetAttribute("NAME", textBoxName.Text);
         }
     }
 }

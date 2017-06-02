@@ -5,17 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace TOAW_OOB_Editor
 {
     internal static class Common
     {
         public static string path;
+        public static XmlDocument doc;
         public static XmlNode oob;
+        public static XmlNode currentNode;
 
         public static void ReadInGamFile(string filename, TreeView tv)
         {
-            XmlDocument doc = new XmlDocument();
+            doc = new XmlDocument();
             doc.Load(filename);
             XmlNode game = doc.SelectSingleNode("GAME");
             XmlNode oob = game.SelectSingleNode("OOB");
@@ -42,7 +45,7 @@ namespace TOAW_OOB_Editor
 
         public static void SaveFile(string path)
         {
-            //TODO
+            doc.Save(path);
         }
 
         public static void LoadEquipment(XmlNode node, DataGridView dgv)
@@ -56,6 +59,21 @@ namespace TOAW_OOB_Editor
                 dgv.Rows[index].Cells[1].Value = ele.GetAttribute("NUMBER");
                 dgv.Rows[index].Cells[2].Value = ele.GetAttribute("MAX");
                 dgv.Rows[index].Cells[3].Value = ele.GetAttribute("DAMAGE");
+                dgv.LostFocus += new EventHandler(Dgv_LostFocus);
+            }
+        }
+
+        private static void Dgv_LostFocus(object sender, EventArgs e)
+        {
+            DataGridView dgv = (DataGridView)sender;
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                XmlElement equipment = (XmlElement)(from XmlNode node in currentNode.ChildNodes
+                                                    where ((XmlElement)node).GetAttribute("NAME") == row.Cells[0].Value.ToString()
+                                                    select node).ToArray()[0];
+                equipment.SetAttribute("NUMBER", row.Cells[1].Value.ToString());
+                equipment.SetAttribute("MAX", row.Cells[2].Value.ToString());
+                equipment.SetAttribute("DAMAGE", row.Cells[3].Value.ToString());
             }
         }
     }

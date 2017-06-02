@@ -130,11 +130,13 @@
             // 
             resources.ApplyResources(this.textBoxY, "textBoxY");
             this.textBoxY.Name = "textBoxY";
+            this.textBoxY.LostFocus += new System.EventHandler(textBoxY_LostFocus);
             // 
             // textBoxX
             // 
             resources.ApplyResources(this.textBoxX, "textBoxX");
             this.textBoxX.Name = "textBoxX";
+            this.textBoxX.LostFocus += new System.EventHandler(textBoxX_LostFocus);
             // 
             // labelY
             // 
@@ -150,6 +152,7 @@
             // 
             resources.ApplyResources(this.textBoxReadiness, "textBoxReadiness");
             this.textBoxReadiness.Name = "textBoxReadiness";
+            this.textBoxReadiness.LostFocus += new System.EventHandler(textBoxReadiness_LostFocus);
             // 
             // labelReadiness
             // 
@@ -160,6 +163,7 @@
             // 
             resources.ApplyResources(this.textBoxSupply, "textBoxSupply");
             this.textBoxSupply.Name = "textBoxSupply";
+             this.textBoxSupply.LostFocus += new System.EventHandler(textBoxSupply_LostFocus);
             // 
             // labelSupply
             // 
@@ -170,6 +174,7 @@
             // 
             resources.ApplyResources(this.textBoxProficiency, "textBoxProficiency");
             this.textBoxProficiency.Name = "textBoxProficiency";
+             this.textBoxProficiency.LostFocus += new System.EventHandler(textBoxProficiency_LostFocus);
             // 
             // labelProficiency
             // 
@@ -180,6 +185,7 @@
             // 
             resources.ApplyResources(this.textBoxName, "textBoxName");
             this.textBoxName.Name = "textBoxName";
+            this.textBoxName.LostFocus += new System.EventHandler(textBoxName_LostFocus);
             // 
             // labelName
             // 
@@ -242,6 +248,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void TextBoxName_LostFocus(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion
