@@ -9,6 +9,21 @@ using System.Xml.Linq;
 
 namespace TOAW_OOB_Editor
 {
+    internal enum SupportScope
+    {
+        ForceSupport, FreeSupport, ArmySupport, InternalSupport
+    }
+
+    internal enum Orders
+    {
+        Defend, Attack, Secure, Independent
+    }
+
+    internal enum Emphasis
+    {
+        LimitLosses, MinimizeLosses, IgnoreLosses
+    }
+
     internal static class Common
     {
         public static string path;
