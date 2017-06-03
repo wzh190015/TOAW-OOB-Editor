@@ -18,6 +18,7 @@ namespace TOAW_OOB_Editor
         public int readiness;
         public int x;
         public int y;
+        public Emphasis emphasis;
 
         public UnitNode(XmlNode node) : base(((XmlElement)node).GetAttribute("NAME"))
         {
@@ -45,6 +46,7 @@ namespace TOAW_OOB_Editor
             {
                 y = int.Parse(element.GetAttribute("Y"));
             }
+            emphasis = Common.GetEnumName<Emphasis>(element.GetAttribute("EMPHASIS"));
         }
     }
 }

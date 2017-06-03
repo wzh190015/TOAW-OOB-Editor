@@ -38,6 +38,12 @@
             this.CloseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.panel = new System.Windows.Forms.Panel();
+            this.comboBoxEmphasis = new System.Windows.Forms.ComboBox();
+            this.comboBoxOrders = new System.Windows.Forms.ComboBox();
+            this.comboBoxSupportScope = new System.Windows.Forms.ComboBox();
+            this.labelEmphasis = new System.Windows.Forms.Label();
+            this.labelOrders = new System.Windows.Forms.Label();
+            this.labelSupportScope = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.Equipment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -117,6 +123,12 @@
             // 
             // panel
             // 
+            this.panel.Controls.Add(this.comboBoxEmphasis);
+            this.panel.Controls.Add(this.comboBoxOrders);
+            this.panel.Controls.Add(this.comboBoxSupportScope);
+            this.panel.Controls.Add(this.labelEmphasis);
+            this.panel.Controls.Add(this.labelOrders);
+            this.panel.Controls.Add(this.labelSupportScope);
             this.panel.Controls.Add(this.dataGridView);
             this.panel.Controls.Add(this.textBoxY);
             this.panel.Controls.Add(this.textBoxX);
@@ -132,6 +144,63 @@
             this.panel.Controls.Add(this.labelName);
             resources.ApplyResources(this.panel, "panel");
             this.panel.Name = "panel";
+            // 
+            // comboBoxEmphasis
+            // 
+            this.comboBoxEmphasis.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxEmphasis, "comboBoxEmphasis");
+            this.comboBoxEmphasis.FormattingEnabled = true;
+            this.comboBoxEmphasis.Items.AddRange(new object[] {
+            resources.GetString("comboBoxEmphasis.Items"),
+            resources.GetString("comboBoxEmphasis.Items1"),
+            resources.GetString("comboBoxEmphasis.Items2"),
+            resources.GetString("comboBoxEmphasis.Items3")});
+            this.comboBoxEmphasis.Name = "comboBoxEmphasis";
+            this.comboBoxEmphasis.TextChanged += new System.EventHandler(this.ComboBoxEmphasis_LostFocus);
+            // 
+            // comboBoxOrders
+            // 
+            this.comboBoxOrders.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxOrders, "comboBoxOrders");
+            this.comboBoxOrders.FormattingEnabled = true;
+            this.comboBoxOrders.Items.AddRange(new object[] {
+            resources.GetString("comboBoxOrders.Items"),
+            resources.GetString("comboBoxOrders.Items1"),
+            resources.GetString("comboBoxOrders.Items2"),
+            resources.GetString("comboBoxOrders.Items3"),
+            resources.GetString("comboBoxOrders.Items4"),
+            resources.GetString("comboBoxOrders.Items5")});
+            this.comboBoxOrders.Name = "comboBoxOrders";
+            this.comboBoxOrders.TextChanged += new System.EventHandler(this.ComboBoxOrders_LostFocus);
+            // 
+            // comboBoxSupportScope
+            // 
+            this.comboBoxSupportScope.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.comboBoxSupportScope, "comboBoxSupportScope");
+            this.comboBoxSupportScope.FormattingEnabled = true;
+            this.comboBoxSupportScope.Items.AddRange(new object[] {
+            resources.GetString("comboBoxSupportScope.Items"),
+            resources.GetString("comboBoxSupportScope.Items1"),
+            resources.GetString("comboBoxSupportScope.Items2"),
+            resources.GetString("comboBoxSupportScope.Items3"),
+            resources.GetString("comboBoxSupportScope.Items4")});
+            this.comboBoxSupportScope.Name = "comboBoxSupportScope";
+            this.comboBoxSupportScope.TextChanged += new System.EventHandler(this.ComboBoxSupportScope_LostFocus);
+            // 
+            // labelEmphasis
+            // 
+            resources.ApplyResources(this.labelEmphasis, "labelEmphasis");
+            this.labelEmphasis.Name = "labelEmphasis";
+            // 
+            // labelOrders
+            // 
+            resources.ApplyResources(this.labelOrders, "labelOrders");
+            this.labelOrders.Name = "labelOrders";
+            // 
+            // labelSupportScope
+            // 
+            resources.ApplyResources(this.labelSupportScope, "labelSupportScope");
+            this.labelSupportScope.Name = "labelSupportScope";
             // 
             // dataGridView
             // 
@@ -320,6 +389,12 @@
         private System.Windows.Forms.ToolStripMenuItem DeleteToolStripMenuItem;
         private System.Windows.Forms.Button buttonAddUnit;
         private System.Windows.Forms.Button buttonAddFormation;
+        private System.Windows.Forms.Label labelOrders;
+        private System.Windows.Forms.Label labelSupportScope;
+        private System.Windows.Forms.Label labelEmphasis;
+        private System.Windows.Forms.ComboBox comboBoxEmphasis;
+        private System.Windows.Forms.ComboBox comboBoxOrders;
+        private System.Windows.Forms.ComboBox comboBoxSupportScope;
     }
 }
 

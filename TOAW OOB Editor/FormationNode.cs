@@ -27,6 +27,9 @@ namespace TOAW_OOB_Editor
             name = element.GetAttribute("NAME");
             proficiency = int.Parse(element.GetAttribute("PROFICIENCY"));
             supply = int.Parse(element.GetAttribute("SUPPLY"));
+            supportScope = Common.GetEnumName<SupportScope>(element.GetAttribute("SUPPORTSCOPE"));
+            orders = Common.GetEnumName<Orders>(element.GetAttribute("ORDERS"));
+            emphasis = Common.GetEnumName<Emphasis>(element.GetAttribute("EMPHASIS"));
         }
     }
 }

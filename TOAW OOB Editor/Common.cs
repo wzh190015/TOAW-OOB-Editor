@@ -32,7 +32,7 @@ namespace TOAW_OOB_Editor
 
     internal enum Orders
     {
-        [Description("Null")]
+        [Description("NULL")]
         Null,
 
         [Description("Defend")]
@@ -45,12 +45,15 @@ namespace TOAW_OOB_Editor
         Secure,
 
         [Description("Independent")]
-        Independent
+        Independent,
+
+        [Description("Static")]
+        Static
     }
 
     internal enum Emphasis
     {
-        [Description("Null")]
+        [Description("NULL")]
         Null,
 
         [Description("Minimize Losses")]

@@ -147,25 +147,25 @@
     <value>文件</value>
   </data>
   <data name="OpenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 30</value>
+    <value>147, 30</value>
   </data>
   <data name="OpenToolStripMenuItem.Text" xml:space="preserve">
     <value>打开</value>
   </data>
   <data name="SaveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 30</value>
+    <value>147, 30</value>
   </data>
   <data name="SaveToolStripMenuItem.Text" xml:space="preserve">
     <value>保存</value>
   </data>
   <data name="SaveAsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 30</value>
+    <value>147, 30</value>
   </data>
   <data name="SaveAsToolStripMenuItem.Text" xml:space="preserve">
     <value>另存为</value>
   </data>
   <data name="CloseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 30</value>
+    <value>147, 30</value>
   </data>
   <data name="CloseToolStripMenuItem.Text" xml:space="preserve">
     <value>关闭</value>
@@ -197,182 +197,207 @@
   <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;dataGridView.Name" xml:space="preserve">
-    <value>dataGridView</value>
+  <data name="comboBoxEmphasis.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;dataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="comboBoxEmphasis.Items" xml:space="preserve">
+    <value>NULL</value>
   </data>
-  <data name="&gt;&gt;dataGridView.Parent" xml:space="preserve">
+  <data name="comboBoxEmphasis.Items1" xml:space="preserve">
+    <value>Minimize Losses</value>
+  </data>
+  <data name="comboBoxEmphasis.Items2" xml:space="preserve">
+    <value>Limit Losses</value>
+  </data>
+  <data name="comboBoxEmphasis.Items3" xml:space="preserve">
+    <value>Ignore Losses</value>
+  </data>
+  <data name="comboBoxEmphasis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 703</value>
+  </data>
+  <data name="comboBoxEmphasis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 26</value>
+  </data>
+  <data name="comboBoxEmphasis.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEmphasis.Name" xml:space="preserve">
+    <value>comboBoxEmphasis</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEmphasis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxEmphasis.Parent" xml:space="preserve">
     <value>panel</value>
   </data>
-  <data name="&gt;&gt;dataGridView.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;comboBoxEmphasis.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;textBoxY.Name" xml:space="preserve">
-    <value>textBoxY</value>
+  <data name="comboBoxOrders.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;textBoxY.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="comboBoxOrders.Items" xml:space="preserve">
+    <value>NULL</value>
   </data>
-  <data name="&gt;&gt;textBoxY.Parent" xml:space="preserve">
+  <data name="comboBoxOrders.Items1" xml:space="preserve">
+    <value>Defend</value>
+  </data>
+  <data name="comboBoxOrders.Items2" xml:space="preserve">
+    <value>Attack</value>
+  </data>
+  <data name="comboBoxOrders.Items3" xml:space="preserve">
+    <value>Secure</value>
+  </data>
+  <data name="comboBoxOrders.Items4" xml:space="preserve">
+    <value>Independent</value>
+  </data>
+  <data name="comboBoxOrders.Items5" xml:space="preserve">
+    <value>Static</value>
+  </data>
+  <data name="comboBoxOrders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 619</value>
+  </data>
+  <data name="comboBoxOrders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 26</value>
+  </data>
+  <data name="comboBoxOrders.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;comboBoxOrders.Name" xml:space="preserve">
+    <value>comboBoxOrders</value>
+  </data>
+  <data name="&gt;&gt;comboBoxOrders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxOrders.Parent" xml:space="preserve">
     <value>panel</value>
   </data>
-  <data name="&gt;&gt;textBoxY.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;comboBoxOrders.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;textBoxX.Name" xml:space="preserve">
-    <value>textBoxX</value>
+  <data name="comboBoxSupportScope.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;textBoxX.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="comboBoxSupportScope.Items" xml:space="preserve">
+    <value>NULL</value>
   </data>
-  <data name="&gt;&gt;textBoxX.Parent" xml:space="preserve">
+  <data name="comboBoxSupportScope.Items1" xml:space="preserve">
+    <value>Force Support</value>
+  </data>
+  <data name="comboBoxSupportScope.Items2" xml:space="preserve">
+    <value>Free Support</value>
+  </data>
+  <data name="comboBoxSupportScope.Items3" xml:space="preserve">
+    <value>Army Support</value>
+  </data>
+  <data name="comboBoxSupportScope.Items4" xml:space="preserve">
+    <value>Internal Support</value>
+  </data>
+  <data name="comboBoxSupportScope.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 535</value>
+  </data>
+  <data name="comboBoxSupportScope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 26</value>
+  </data>
+  <data name="comboBoxSupportScope.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSupportScope.Name" xml:space="preserve">
+    <value>comboBoxSupportScope</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSupportScope.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSupportScope.Parent" xml:space="preserve">
     <value>panel</value>
   </data>
-  <data name="&gt;&gt;textBoxX.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;comboBoxSupportScope.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;labelY.Name" xml:space="preserve">
-    <value>labelY</value>
+  <data name="labelEmphasis.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;labelY.Type" xml:space="preserve">
+  <data name="labelEmphasis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 710</value>
+  </data>
+  <data name="labelEmphasis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="labelEmphasis.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="labelEmphasis.Text" xml:space="preserve">
+    <value>侧重</value>
+  </data>
+  <data name="&gt;&gt;labelEmphasis.Name" xml:space="preserve">
+    <value>labelEmphasis</value>
+  </data>
+  <data name="&gt;&gt;labelEmphasis.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelY.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelEmphasis.Parent" xml:space="preserve">
     <value>panel</value>
   </data>
-  <data name="&gt;&gt;labelY.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelEmphasis.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;labelX.Name" xml:space="preserve">
-    <value>labelX</value>
+  <data name="labelOrders.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;labelX.Type" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelOrders.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelOrders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 624</value>
+  </data>
+  <data name="labelOrders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="labelOrders.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="labelOrders.Text" xml:space="preserve">
+    <value>命令</value>
+  </data>
+  <data name="&gt;&gt;labelOrders.Name" xml:space="preserve">
+    <value>labelOrders</value>
+  </data>
+  <data name="&gt;&gt;labelOrders.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;labelX.Parent" xml:space="preserve">
+  <data name="&gt;&gt;labelOrders.Parent" xml:space="preserve">
     <value>panel</value>
   </data>
-  <data name="&gt;&gt;labelX.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelOrders.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;textBoxReadiness.Name" xml:space="preserve">
-    <value>textBoxReadiness</value>
+  <data name="labelSupportScope.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;textBoxReadiness.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="labelSupportScope.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 538</value>
   </data>
-  <data name="&gt;&gt;textBoxReadiness.Parent" xml:space="preserve">
+  <data name="labelSupportScope.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="labelSupportScope.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="labelSupportScope.Text" xml:space="preserve">
+    <value>支援</value>
+  </data>
+  <data name="&gt;&gt;labelSupportScope.Name" xml:space="preserve">
+    <value>labelSupportScope</value>
+  </data>
+  <data name="&gt;&gt;labelSupportScope.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSupportScope.Parent" xml:space="preserve">
     <value>panel</value>
   </data>
-  <data name="&gt;&gt;textBoxReadiness.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;labelSupportScope.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;labelReadiness.Name" xml:space="preserve">
-    <value>labelReadiness</value>
-  </data>
-  <data name="&gt;&gt;labelReadiness.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReadiness.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelReadiness.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;textBoxSupply.Name" xml:space="preserve">
-    <value>textBoxSupply</value>
-  </data>
-  <data name="&gt;&gt;textBoxSupply.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxSupply.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;textBoxSupply.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;labelSupply.Name" xml:space="preserve">
-    <value>labelSupply</value>
-  </data>
-  <data name="&gt;&gt;labelSupply.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelSupply.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelSupply.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;textBoxProficiency.Name" xml:space="preserve">
-    <value>textBoxProficiency</value>
-  </data>
-  <data name="&gt;&gt;textBoxProficiency.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxProficiency.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;textBoxProficiency.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;labelProficiency.Name" xml:space="preserve">
-    <value>labelProficiency</value>
-  </data>
-  <data name="&gt;&gt;labelProficiency.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelProficiency.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelProficiency.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;textBoxName.Name" xml:space="preserve">
-    <value>textBoxName</value>
-  </data>
-  <data name="&gt;&gt;textBoxName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxName.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;textBoxName.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;labelName.Name" xml:space="preserve">
-    <value>labelName</value>
-  </data>
-  <data name="&gt;&gt;labelName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelName.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelName.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>366, 35</value>
-  </data>
-  <data name="panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1400, 776</value>
-  </data>
-  <data name="panel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel.Name" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;panel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <metadata name="Equipment.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -408,7 +433,334 @@
     <value>panel</value>
   </data>
   <data name="&gt;&gt;dataGridView.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="textBoxY.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxY.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 449</value>
+  </data>
+  <data name="textBoxY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 28</value>
+  </data>
+  <data name="textBoxY.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textBoxY.Name" xml:space="preserve">
+    <value>textBoxY</value>
+  </data>
+  <data name="&gt;&gt;textBoxY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxY.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;textBoxY.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="textBoxX.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 363</value>
+  </data>
+  <data name="textBoxX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 28</value>
+  </data>
+  <data name="textBoxX.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBoxX.Name" xml:space="preserve">
+    <value>textBoxX</value>
+  </data>
+  <data name="&gt;&gt;textBoxX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxX.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;textBoxX.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelY.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelY.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 452</value>
+  </data>
+  <data name="labelY.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 18</value>
+  </data>
+  <data name="labelY.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelY.Text" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="&gt;&gt;labelY.Name" xml:space="preserve">
+    <value>labelY</value>
+  </data>
+  <data name="&gt;&gt;labelY.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelY.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;labelY.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="labelX.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 366</value>
+  </data>
+  <data name="labelX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 18</value>
+  </data>
+  <data name="labelX.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelX.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="&gt;&gt;labelX.Name" xml:space="preserve">
+    <value>labelX</value>
+  </data>
+  <data name="&gt;&gt;labelX.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelX.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;labelX.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textBoxReadiness.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxReadiness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 277</value>
+  </data>
+  <data name="textBoxReadiness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 28</value>
+  </data>
+  <data name="textBoxReadiness.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBoxReadiness.Name" xml:space="preserve">
+    <value>textBoxReadiness</value>
+  </data>
+  <data name="&gt;&gt;textBoxReadiness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxReadiness.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;textBoxReadiness.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="labelReadiness.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelReadiness.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 280</value>
+  </data>
+  <data name="labelReadiness.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="labelReadiness.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelReadiness.Text" xml:space="preserve">
+    <value>准备</value>
+  </data>
+  <data name="&gt;&gt;labelReadiness.Name" xml:space="preserve">
+    <value>labelReadiness</value>
+  </data>
+  <data name="&gt;&gt;labelReadiness.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelReadiness.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;labelReadiness.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="textBoxSupply.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxSupply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 191</value>
+  </data>
+  <data name="textBoxSupply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 28</value>
+  </data>
+  <data name="textBoxSupply.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBoxSupply.Name" xml:space="preserve">
+    <value>textBoxSupply</value>
+  </data>
+  <data name="&gt;&gt;textBoxSupply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSupply.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;textBoxSupply.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="labelSupply.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSupply.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 194</value>
+  </data>
+  <data name="labelSupply.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="labelSupply.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelSupply.Text" xml:space="preserve">
+    <value>补给</value>
+  </data>
+  <data name="&gt;&gt;labelSupply.Name" xml:space="preserve">
+    <value>labelSupply</value>
+  </data>
+  <data name="&gt;&gt;labelSupply.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSupply.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;labelSupply.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="textBoxProficiency.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxProficiency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 105</value>
+  </data>
+  <data name="textBoxProficiency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 28</value>
+  </data>
+  <data name="textBoxProficiency.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxProficiency.Name" xml:space="preserve">
+    <value>textBoxProficiency</value>
+  </data>
+  <data name="&gt;&gt;textBoxProficiency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxProficiency.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;textBoxProficiency.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="labelProficiency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelProficiency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 108</value>
+  </data>
+  <data name="labelProficiency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="labelProficiency.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelProficiency.Text" xml:space="preserve">
+    <value>熟练</value>
+  </data>
+  <data name="&gt;&gt;labelProficiency.Name" xml:space="preserve">
+    <value>labelProficiency</value>
+  </data>
+  <data name="&gt;&gt;labelProficiency.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelProficiency.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;labelProficiency.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="textBoxName.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 19</value>
+  </data>
+  <data name="textBoxName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 28</value>
+  </data>
+  <data name="textBoxName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxName.Name" xml:space="preserve">
+    <value>textBoxName</value>
+  </data>
+  <data name="&gt;&gt;textBoxName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxName.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;textBoxName.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="labelName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 22</value>
+  </data>
+  <data name="labelName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="labelName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="labelName.Text" xml:space="preserve">
+    <value>名字</value>
+  </data>
+  <data name="&gt;&gt;labelName.Name" xml:space="preserve">
+    <value>labelName</value>
+  </data>
+  <data name="&gt;&gt;labelName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelName.Parent" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;labelName.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>366, 35</value>
+  </data>
+  <data name="panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1400, 776</value>
+  </data>
+  <data name="panel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel.Name" xml:space="preserve">
+    <value>panel</value>
+  </data>
+  <data name="&gt;&gt;panel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="Equipment.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -433,312 +785,6 @@
   </metadata>
   <data name="Damage.HeaderText" xml:space="preserve">
     <value>损毁</value>
-  </data>
-  <data name="textBoxY.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxY.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 299</value>
-  </data>
-  <data name="textBoxY.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 28</value>
-  </data>
-  <data name="textBoxY.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;textBoxY.Name" xml:space="preserve">
-    <value>textBoxY</value>
-  </data>
-  <data name="&gt;&gt;textBoxY.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxY.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;textBoxY.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textBoxX.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 243</value>
-  </data>
-  <data name="textBoxX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 28</value>
-  </data>
-  <data name="textBoxX.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;textBoxX.Name" xml:space="preserve">
-    <value>textBoxX</value>
-  </data>
-  <data name="&gt;&gt;textBoxX.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxX.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;textBoxX.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="labelY.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelY.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 302</value>
-  </data>
-  <data name="labelY.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 18</value>
-  </data>
-  <data name="labelY.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="labelY.Text" xml:space="preserve">
-    <value>Y</value>
-  </data>
-  <data name="&gt;&gt;labelY.Name" xml:space="preserve">
-    <value>labelY</value>
-  </data>
-  <data name="&gt;&gt;labelY.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelY.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelY.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="labelX.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 246</value>
-  </data>
-  <data name="labelX.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 18</value>
-  </data>
-  <data name="labelX.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="labelX.Text" xml:space="preserve">
-    <value>X</value>
-  </data>
-  <data name="&gt;&gt;labelX.Name" xml:space="preserve">
-    <value>labelX</value>
-  </data>
-  <data name="&gt;&gt;labelX.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelX.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelX.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="textBoxReadiness.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxReadiness.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 187</value>
-  </data>
-  <data name="textBoxReadiness.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 28</value>
-  </data>
-  <data name="textBoxReadiness.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;textBoxReadiness.Name" xml:space="preserve">
-    <value>textBoxReadiness</value>
-  </data>
-  <data name="&gt;&gt;textBoxReadiness.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxReadiness.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;textBoxReadiness.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="labelReadiness.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelReadiness.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 190</value>
-  </data>
-  <data name="labelReadiness.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 18</value>
-  </data>
-  <data name="labelReadiness.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="labelReadiness.Text" xml:space="preserve">
-    <value>准备</value>
-  </data>
-  <data name="&gt;&gt;labelReadiness.Name" xml:space="preserve">
-    <value>labelReadiness</value>
-  </data>
-  <data name="&gt;&gt;labelReadiness.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelReadiness.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelReadiness.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="textBoxSupply.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxSupply.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 131</value>
-  </data>
-  <data name="textBoxSupply.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 28</value>
-  </data>
-  <data name="textBoxSupply.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;textBoxSupply.Name" xml:space="preserve">
-    <value>textBoxSupply</value>
-  </data>
-  <data name="&gt;&gt;textBoxSupply.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxSupply.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;textBoxSupply.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="labelSupply.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelSupply.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 134</value>
-  </data>
-  <data name="labelSupply.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 18</value>
-  </data>
-  <data name="labelSupply.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="labelSupply.Text" xml:space="preserve">
-    <value>补给</value>
-  </data>
-  <data name="&gt;&gt;labelSupply.Name" xml:space="preserve">
-    <value>labelSupply</value>
-  </data>
-  <data name="&gt;&gt;labelSupply.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelSupply.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelSupply.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="textBoxProficiency.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxProficiency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 75</value>
-  </data>
-  <data name="textBoxProficiency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 28</value>
-  </data>
-  <data name="textBoxProficiency.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;textBoxProficiency.Name" xml:space="preserve">
-    <value>textBoxProficiency</value>
-  </data>
-  <data name="&gt;&gt;textBoxProficiency.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxProficiency.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;textBoxProficiency.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="labelProficiency.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelProficiency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 78</value>
-  </data>
-  <data name="labelProficiency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 18</value>
-  </data>
-  <data name="labelProficiency.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="labelProficiency.Text" xml:space="preserve">
-    <value>熟练</value>
-  </data>
-  <data name="&gt;&gt;labelProficiency.Name" xml:space="preserve">
-    <value>labelProficiency</value>
-  </data>
-  <data name="&gt;&gt;labelProficiency.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelProficiency.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelProficiency.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="textBoxName.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="textBoxName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>130, 19</value>
-  </data>
-  <data name="textBoxName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 28</value>
-  </data>
-  <data name="textBoxName.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxName.Name" xml:space="preserve">
-    <value>textBoxName</value>
-  </data>
-  <data name="&gt;&gt;textBoxName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxName.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;textBoxName.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="labelName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 22</value>
-  </data>
-  <data name="labelName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 18</value>
-  </data>
-  <data name="labelName.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="labelName.Text" xml:space="preserve">
-    <value>名字</value>
-  </data>
-  <data name="&gt;&gt;labelName.Name" xml:space="preserve">
-    <value>labelName</value>
-  </data>
-  <data name="&gt;&gt;labelName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelName.Parent" xml:space="preserve">
-    <value>panel</value>
-  </data>
-  <data name="&gt;&gt;labelName.ZOrder" xml:space="preserve">
-    <value>12</value>
   </data>
   <metadata name="contextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>171, 17</value>
@@ -783,7 +829,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonAddUnit.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="buttonAddFormation.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -810,7 +856,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonAddFormation.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

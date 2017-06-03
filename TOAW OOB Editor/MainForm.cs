@@ -35,6 +35,28 @@ namespace TOAW_OOB_Editor
 
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (textBoxY.Enabled)
+            {
+                textBoxY_LostFocus(sender, e);
+            }
+            if (textBoxX.Enabled)
+            {
+                textBoxX_LostFocus(sender, e);
+            }
+            if (textBoxReadiness.Enabled)
+            {
+                textBoxReadiness_LostFocus(sender, e);
+            }
+            if (textBoxSupply.Enabled)
+            {
+                textBoxSupply_LostFocus(sender, e);
+            }
+            if (textBoxProficiency.Enabled)
+            {
+                textBoxProficiency_LostFocus(sender, e);
+            }
+            textBoxName_LostFocus(sender, e);
+
             Common.SaveFile(Common.path);
         }
 
@@ -75,6 +97,12 @@ namespace TOAW_OOB_Editor
                         textBoxY.Text = "";
                         dataGridView.Enabled = false;
                         dataGridView.Rows.Clear();
+                        comboBoxEmphasis.Enabled = false;
+                        comboBoxEmphasis.Text = "NULL";
+                        comboBoxOrders.Enabled = false;
+                        comboBoxOrders.Text = "NULL";
+                        comboBoxSupportScope.Enabled = false;
+                        comboBoxSupportScope.Text = "NULL";
 
                         textBoxName.Text = forcenode.name;
                         textBoxProficiency.Text = forcenode.proficiency.ToString();
@@ -104,10 +132,17 @@ namespace TOAW_OOB_Editor
                         textBoxY.Text = "";
                         dataGridView.Enabled = false;
                         dataGridView.Rows.Clear();
+                        comboBoxEmphasis.Enabled = true;
+                        comboBoxOrders.Enabled = true;
+                        comboBoxSupportScope.Enabled = true;
 
                         textBoxName.Text = fomationnode.name;
                         textBoxProficiency.Text = fomationnode.proficiency.ToString();
                         textBoxSupply.Text = fomationnode.supply.ToString();
+                        comboBoxEmphasis.Text = Common.GetDescription(fomationnode.emphasis);
+                        comboBoxOrders.Text = Common.GetDescription(fomationnode.orders);
+                        comboBoxSupportScope.Text = Common.GetDescription(fomationnode.supportScope);
+
                         buttonAddFormation.Enabled = true;
                         buttonAddUnit.Enabled = true;
                     }
@@ -131,12 +166,18 @@ namespace TOAW_OOB_Editor
                         textBoxY.Enabled = true;
                         textBoxY.Text = "";
                         dataGridView.Enabled = true;
+                        comboBoxEmphasis.Enabled = true;
+                        comboBoxOrders.Enabled = false;
+                        comboBoxOrders.Text = "NULL";
+                        comboBoxSupportScope.Enabled = false;
+                        comboBoxSupportScope.Text = "NULL";
                         dataGridView.Rows.Clear();
 
                         textBoxName.Text = unitnode.name;
                         textBoxProficiency.Text = unitnode.proficiency.ToString();
                         textBoxSupply.Text = unitnode.supply.ToString();
                         textBoxReadiness.Text = unitnode.readiness.ToString();
+                        comboBoxEmphasis.Text = Common.GetDescription(unitnode.emphasis);
                         if (unitnode.x != -1)
                         {
                             textBoxX.Text = unitnode.x.ToString();
@@ -178,7 +219,7 @@ namespace TOAW_OOB_Editor
         private void textBoxX_LostFocus(object sender, EventArgs e)
         {
             XmlElement ele = ((XmlElement)Common.currentNode);
-            if (string.IsNullOrEmpty(textBoxY.Text))
+            if (string.IsNullOrEmpty(textBoxX.Text))
             {
                 if (!string.IsNullOrEmpty(ele.GetAttribute("X")))
                 {
@@ -188,7 +229,7 @@ namespace TOAW_OOB_Editor
             else
             {
                 ele.Attributes.Append(Common.doc.CreateAttribute("X"));
-                ele.SetAttribute("X", textBoxY.Text);
+                ele.SetAttribute("X", textBoxX.Text);
             }
         }
 
@@ -220,6 +261,21 @@ namespace TOAW_OOB_Editor
         private void textBoxName_LostFocus(object sender, EventArgs e)
         {
             ((XmlElement)Common.currentNode).SetAttribute("NAME", textBoxName.Text);
+        }
+
+        private void ComboBoxEmphasis_LostFocus(object sender, System.EventArgs e)
+        {
+            ((XmlElement)Common.currentNode).SetAttribute("EMPHASIS", comboBoxEmphasis.Text);
+        }
+
+        private void ComboBoxOrders_LostFocus(object sender, System.EventArgs e)
+        {
+            ((XmlElement)Common.currentNode).SetAttribute("ORDERS", comboBoxOrders.Text);
+        }
+
+        private void ComboBoxSupportScope_LostFocus(object sender, System.EventArgs e)
+        {
+            ((XmlElement)Common.currentNode).SetAttribute("SUPPORTSCOPE", comboBoxSupportScope.Text);
         }
 
         private void treeView_MouseDown(object sender, MouseEventArgs e)
