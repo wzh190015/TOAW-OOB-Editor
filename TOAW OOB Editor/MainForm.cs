@@ -323,8 +323,7 @@ namespace TOAW_OOB_Editor
             newFormation.AppendChild(track3);
             newFormation.AppendChild(track4);
             newFormation.AppendChild(track5);
-
-            forceNode.forceXmlNode.AppendChild(newFormation);
+            forceNode.forceXmlNode.InsertBefore(newFormation, forceNode.forceXmlNode.LastChild);
             FormationNode newFormationNode = new FormationNode(newFormation);
             forceNode.Nodes.Add(newFormationNode);
             treeView.SelectedNode = newFormationNode;
@@ -365,8 +364,6 @@ namespace TOAW_OOB_Editor
             newUnit.SetAttributeNode(Common.doc.CreateAttribute("PROFICIENCY"));
             newUnit.SetAttributeNode(Common.doc.CreateAttribute("READINESS"));
             newUnit.SetAttributeNode(Common.doc.CreateAttribute("SUPPLY"));
-            newUnit.SetAttributeNode(Common.doc.CreateAttribute("X"));
-            newUnit.SetAttributeNode(Common.doc.CreateAttribute("Y"));
             newUnit.SetAttributeNode(Common.doc.CreateAttribute("EMPHASIS"));
             newUnit.SetAttributeNode(Common.doc.CreateAttribute("PARENT"));
             newUnit.SetAttributeNode(Common.doc.CreateAttribute("STATUS"));
@@ -374,17 +371,18 @@ namespace TOAW_OOB_Editor
 
             if (((ForceNode)formationNode.Parent).ID == 1)
             {
-                newUnit.SetAttribute("ID", (++Common.Force1MaxFormationID).ToString());
+                newUnit.SetAttribute("ID", (++Common.Force1MaxUnitID).ToString());
             }
             else
             {
-                newUnit.SetAttribute("ID", (++Common.Force2MaxFormationID).ToString());
+                newUnit.SetAttribute("ID", (++Common.Force2MaxUnitID).ToString());
             }
-            newUnit.SetAttribute("NAME", "NewFormation");
+            newUnit.SetAttribute("NAME", "NewUnit");
             newUnit.SetAttribute("COLOR", "55");
             newUnit.SetAttribute("SIZE", "Regiment");
             newUnit.SetAttribute("EXPERIENCE", "untried");
             newUnit.SetAttribute("PROFICIENCY", "100");
+            newUnit.SetAttribute("READINESS", "75");
             newUnit.SetAttribute("SUPPLY", "100");
             newUnit.SetAttribute("SUPPORTSCOPE", "Internal Support");
             newUnit.SetAttribute("ORDERS", "Attack");

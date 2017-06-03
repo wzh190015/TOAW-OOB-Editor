@@ -27,6 +27,7 @@ namespace TOAW_OOB_Editor
             name = element.GetAttribute("NAME");
             proficiency = int.Parse(element.GetAttribute("PROFICIENCY"));
             supply = int.Parse(element.GetAttribute("SUPPLY"));
+            string str = element.GetAttribute("READINESS");
             readiness = int.Parse(element.GetAttribute("READINESS"));
             if (string.IsNullOrEmpty(element.GetAttribute("X")))
             {
