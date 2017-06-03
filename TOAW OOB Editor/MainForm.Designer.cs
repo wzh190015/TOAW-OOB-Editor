@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.treeView = new System.Windows.Forms.TreeView();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -37,6 +38,11 @@
             this.CloseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.panel = new System.Windows.Forms.Panel();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Equipment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Max = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Damage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBoxY = new System.Windows.Forms.TextBox();
             this.textBoxX = new System.Windows.Forms.TextBox();
             this.labelY = new System.Windows.Forms.Label();
@@ -49,14 +55,14 @@
             this.labelProficiency = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.Equipment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Max = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Damage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.DeleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonAddUnit = new System.Windows.Forms.Button();
+            this.buttonAddFormation = new System.Windows.Forms.Button();
             this.menuStrip.SuspendLayout();
             this.panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            this.contextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // treeView
@@ -65,6 +71,7 @@
             resources.ApplyResources(this.treeView, "treeView");
             this.treeView.Name = "treeView";
             this.treeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView_AfterSelect);
+            this.treeView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.treeView_MouseDown);
             // 
             // FileToolStripMenuItem
             // 
@@ -126,72 +133,6 @@
             resources.ApplyResources(this.panel, "panel");
             this.panel.Name = "panel";
             // 
-            // textBoxY
-            // 
-            resources.ApplyResources(this.textBoxY, "textBoxY");
-            this.textBoxY.Name = "textBoxY";
-            this.textBoxY.LostFocus += new System.EventHandler(textBoxY_LostFocus);
-            // 
-            // textBoxX
-            // 
-            resources.ApplyResources(this.textBoxX, "textBoxX");
-            this.textBoxX.Name = "textBoxX";
-            this.textBoxX.LostFocus += new System.EventHandler(textBoxX_LostFocus);
-            // 
-            // labelY
-            // 
-            resources.ApplyResources(this.labelY, "labelY");
-            this.labelY.Name = "labelY";
-            // 
-            // labelX
-            // 
-            resources.ApplyResources(this.labelX, "labelX");
-            this.labelX.Name = "labelX";
-            // 
-            // textBoxReadiness
-            // 
-            resources.ApplyResources(this.textBoxReadiness, "textBoxReadiness");
-            this.textBoxReadiness.Name = "textBoxReadiness";
-            this.textBoxReadiness.LostFocus += new System.EventHandler(textBoxReadiness_LostFocus);
-            // 
-            // labelReadiness
-            // 
-            resources.ApplyResources(this.labelReadiness, "labelReadiness");
-            this.labelReadiness.Name = "labelReadiness";
-            // 
-            // textBoxSupply
-            // 
-            resources.ApplyResources(this.textBoxSupply, "textBoxSupply");
-            this.textBoxSupply.Name = "textBoxSupply";
-             this.textBoxSupply.LostFocus += new System.EventHandler(textBoxSupply_LostFocus);
-            // 
-            // labelSupply
-            // 
-            resources.ApplyResources(this.labelSupply, "labelSupply");
-            this.labelSupply.Name = "labelSupply";
-            // 
-            // textBoxProficiency
-            // 
-            resources.ApplyResources(this.textBoxProficiency, "textBoxProficiency");
-            this.textBoxProficiency.Name = "textBoxProficiency";
-             this.textBoxProficiency.LostFocus += new System.EventHandler(textBoxProficiency_LostFocus);
-            // 
-            // labelProficiency
-            // 
-            resources.ApplyResources(this.labelProficiency, "labelProficiency");
-            this.labelProficiency.Name = "labelProficiency";
-            // 
-            // textBoxName
-            // 
-            resources.ApplyResources(this.textBoxName, "textBoxName");
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.LostFocus += new System.EventHandler(textBoxName_LostFocus);
-            // 
-            // labelName
-            // 
-            resources.ApplyResources(this.labelName, "labelName");
-            this.labelName.Name = "labelName";
-            // 
             // dataGridView
             // 
             this.dataGridView.AllowUserToAddRows = false;
@@ -229,10 +170,106 @@
             resources.ApplyResources(this.Damage, "Damage");
             this.Damage.Name = "Damage";
             // 
+            // textBoxY
+            // 
+            resources.ApplyResources(this.textBoxY, "textBoxY");
+            this.textBoxY.Name = "textBoxY";
+            this.textBoxY.LostFocus += new System.EventHandler(this.textBoxY_LostFocus);
+            // 
+            // textBoxX
+            // 
+            resources.ApplyResources(this.textBoxX, "textBoxX");
+            this.textBoxX.Name = "textBoxX";
+            this.textBoxX.LostFocus += new System.EventHandler(this.textBoxX_LostFocus);
+            // 
+            // labelY
+            // 
+            resources.ApplyResources(this.labelY, "labelY");
+            this.labelY.Name = "labelY";
+            // 
+            // labelX
+            // 
+            resources.ApplyResources(this.labelX, "labelX");
+            this.labelX.Name = "labelX";
+            // 
+            // textBoxReadiness
+            // 
+            resources.ApplyResources(this.textBoxReadiness, "textBoxReadiness");
+            this.textBoxReadiness.Name = "textBoxReadiness";
+            this.textBoxReadiness.LostFocus += new System.EventHandler(this.textBoxReadiness_LostFocus);
+            // 
+            // labelReadiness
+            // 
+            resources.ApplyResources(this.labelReadiness, "labelReadiness");
+            this.labelReadiness.Name = "labelReadiness";
+            // 
+            // textBoxSupply
+            // 
+            resources.ApplyResources(this.textBoxSupply, "textBoxSupply");
+            this.textBoxSupply.Name = "textBoxSupply";
+            this.textBoxSupply.LostFocus += new System.EventHandler(this.textBoxSupply_LostFocus);
+            // 
+            // labelSupply
+            // 
+            resources.ApplyResources(this.labelSupply, "labelSupply");
+            this.labelSupply.Name = "labelSupply";
+            // 
+            // textBoxProficiency
+            // 
+            resources.ApplyResources(this.textBoxProficiency, "textBoxProficiency");
+            this.textBoxProficiency.Name = "textBoxProficiency";
+            this.textBoxProficiency.LostFocus += new System.EventHandler(this.textBoxProficiency_LostFocus);
+            // 
+            // labelProficiency
+            // 
+            resources.ApplyResources(this.labelProficiency, "labelProficiency");
+            this.labelProficiency.Name = "labelProficiency";
+            // 
+            // textBoxName
+            // 
+            resources.ApplyResources(this.textBoxName, "textBoxName");
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.LostFocus += new System.EventHandler(this.textBoxName_LostFocus);
+            // 
+            // labelName
+            // 
+            resources.ApplyResources(this.labelName, "labelName");
+            this.labelName.Name = "labelName";
+            // 
+            // contextMenuStrip
+            // 
+            this.contextMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.DeleteToolStripMenuItem});
+            this.contextMenuStrip.Name = "contextMenuStrip";
+            resources.ApplyResources(this.contextMenuStrip, "contextMenuStrip");
+            // 
+            // DeleteToolStripMenuItem
+            // 
+            this.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem";
+            resources.ApplyResources(this.DeleteToolStripMenuItem, "DeleteToolStripMenuItem");
+            this.DeleteToolStripMenuItem.Click += new System.EventHandler(this.DeleteToolStripMenuItem_Click);
+            // 
+            // buttonAddUnit
+            // 
+            resources.ApplyResources(this.buttonAddUnit, "buttonAddUnit");
+            this.buttonAddUnit.Name = "buttonAddUnit";
+            this.buttonAddUnit.UseVisualStyleBackColor = true;
+            this.buttonAddUnit.Click += new System.EventHandler(this.buttonAddUnit_Click);
+            // 
+            // buttonAddFormation
+            // 
+            resources.ApplyResources(this.buttonAddFormation, "buttonAddFormation");
+            this.buttonAddFormation.Name = "buttonAddFormation";
+            this.buttonAddFormation.UseVisualStyleBackColor = true;
+            this.buttonAddFormation.Click += new System.EventHandler(this.buttonAddFormation_Click);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.buttonAddFormation);
+            this.Controls.Add(this.buttonAddUnit);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.treeView);
             this.Controls.Add(this.menuStrip);
@@ -245,15 +282,12 @@
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            this.contextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        private void TextBoxName_LostFocus(object sender, System.EventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
 
         #endregion
 
@@ -282,6 +316,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Number;
         private System.Windows.Forms.DataGridViewTextBoxColumn Max;
         private System.Windows.Forms.DataGridViewTextBoxColumn Damage;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem DeleteToolStripMenuItem;
+        private System.Windows.Forms.Button buttonAddUnit;
+        private System.Windows.Forms.Button buttonAddFormation;
     }
 }
 

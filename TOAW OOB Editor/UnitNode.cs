@@ -11,6 +11,7 @@ namespace TOAW_OOB_Editor
     internal class UnitNode : TreeNode
     {
         public XmlNode unitXmlNode;
+        public int ID;
         public string name;
         public int proficiency;
         public int supply;
@@ -22,13 +23,14 @@ namespace TOAW_OOB_Editor
         {
             unitXmlNode = node;
             XmlElement element = (XmlElement)node;
+            ID = int.Parse(element.GetAttribute("ID"));
             name = element.GetAttribute("NAME");
             proficiency = int.Parse(element.GetAttribute("PROFICIENCY"));
             supply = int.Parse(element.GetAttribute("SUPPLY"));
             readiness = int.Parse(element.GetAttribute("READINESS"));
             if (string.IsNullOrEmpty(element.GetAttribute("X")))
             {
-                x = 0;
+                x = -1;
             }
             else
             {
@@ -36,7 +38,7 @@ namespace TOAW_OOB_Editor
             }
             if (string.IsNullOrEmpty(element.GetAttribute("Y")))
             {
-                y = 0;
+                y = -1;
             }
             else
             {
